@@ -14,6 +14,7 @@ public class RepeatAdditionQuiz {
 		
 		System.out.print("What is " + number1 + " + " + number2 + "? ");
 		int answer = input.nextInt();
+		list.add(answer);
 		if(number1+number2 ==answer){
 			System.out.print("You got it!"); 
 		} 
@@ -22,7 +23,7 @@ public class RepeatAdditionQuiz {
 			answer = input.nextInt();
 			for(int i=0;i<list.size();i++){
 				if(list.get(i)==answer)
-					System.out.print("You already entered " + answer);
+					System.out.println("You already entered " + answer);
 			}
 			if(!list.contains(answer))
 				list.add(answer); 

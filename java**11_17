@@ -1,9 +1,7 @@
-package java;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class java11_17 {
+public class RepeatAdditionQuiz {
 
 	/**
 	 * @param args
@@ -22,7 +20,6 @@ public class java11_17 {
 			if(m%i==0)
 			{
 				list.add(i);
-				System.out.println(i);
 				m=m/i;
 				i=1;
 			}
@@ -52,12 +49,10 @@ public class java11_17 {
 		}
 		for(int i=0;i<list.size();i++)//把奇数次的数据相乘得n
 		{
-			System.out.println(list.get(i));
+			//System.out.println(list.get(i));
 			mul*=list.get(i);
 		}
 		return mul;
 	}
 
 }
-
- 
